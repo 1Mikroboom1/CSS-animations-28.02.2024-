@@ -9,7 +9,6 @@ body {
 	display: flex;
 	flex-wrap: nowrap;
 	flex-direction: column;
-	border: solid 5px;
 }
 
 .hole {

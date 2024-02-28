@@ -25,10 +25,10 @@ body {
 .hole:after {
     content: "  ";
     position: absolute;
-    width: 210mm;
-    height: 297mm;
+    width: 209mm;
+    height: 296mm;
     left: 50%;
-    top: 15px;
+    top: 10px;
     transform: translate(-50%, 0);
     box-shadow: 0 0 0 2000px #fff;
 	border: solid 5px gray;
@@ -183,7 +183,8 @@ body {
 
 .col1 {
 	width: 50%;
-	z-index: 4;
+	position: relative;
+	z-index: 2;
 }
 
 @keyframes col1 {
@@ -230,6 +231,7 @@ body {
 	flex-wrap: nowrap;
 	flex-direction: column;
 	position: relative;
+	z-index: 1;
 	animation: col2 1s forwards;
 	animation-delay: 9s;
 }
@@ -249,28 +251,28 @@ p.col2 {
 
 #jpg3 {
 	position: relative;
-	z-index: 1;
+	z-index: 0;
 	width: 100%;
 	margin: 1% 3%;
 }
 
 #pngOG {
 	position: relative;
-	z-index: 3;
+	z-index: 5;
 	width: 130%;
 	margin: -10% 2% 0% -10%;
 }
 
 #jpg4 {
 	position: relative;
-	z-index: 1;
+	z-index: 0;
 	width: 100%;
 	margin: 1% 3%;
 }
 
 #pngCV {
 	position: relative;
-	z-index: 3;
+	z-index: 5;
 	width: 130%;
 	margin: -10% 2% 0% -10%;
 }
@@ -293,7 +295,7 @@ p.col2 {
 #pngSTAR {
 	visibility: hidden;
 	position: absolute;
-	z-index: 2;
+	z-index: 3;
 	width: 45%;
 	bottom: 175%;
 	left: 99%;

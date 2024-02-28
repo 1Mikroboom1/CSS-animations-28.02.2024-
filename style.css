@@ -275,12 +275,30 @@ p.col2 {
 	margin: -10% 2% 0% -10%;
 }
 
+@keyframes pngSTAR {
+	0% {
+		opacity: 0;
+		visibility: visible;
+	}
+	50% {
+		opacity: 1;
+		visibility: visible;
+	}
+	100% {
+		opacity: 0;
+		visibility: visible;
+	}
+}
+
 #pngSTAR {
+	visibility: hidden;
 	position: absolute;
 	z-index: 2;
 	width: 45%;
 	bottom: 175%;
 	left: 99%;
+	animation: pngSTAR 3s infinite;
+	animation-delay: 12s;
 }
 
 #jpg5 {
